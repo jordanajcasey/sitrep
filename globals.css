@@ -1,4 +1,14 @@
-import '../styles/globals.css'
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@300;400&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #__next { height: 100%; overflow: hidden; }
+body { background: #07090c; color: #bfcdd8; }
+
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #1f2f42; border-radius: 2px; }
+
+@keyframes blink    { 0%,100%{opacity:1} 50%{opacity:.3} }
+@keyframes fadein   { from{opacity:0;transform:translateY(5px)} to{opacity:1;transform:none} }
+@keyframes spin     { to{transform:rotate(360deg)} }
+@keyframes ticker   { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
